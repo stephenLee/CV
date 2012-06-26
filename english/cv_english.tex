@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[green]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Xiaodong}
+\familyname{Li}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{Software School of Dalian University of Technology}{Development Area Of Dalian, 116620}    % optional, remove the line if not wanted
+%\mobile{+30 698 4385057}                    % optional, remove the line if not wanted
+\phone{+86 15841109629}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{lxd.dlut@gmail.com}                      % optional, remove the line if not wanted
+%\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
+\homepage{http://github.com/stephenLee}                 % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{2011-- President}{Graduate Study}{Dalian University of Technology}{Dalian} {}{}
+\cventry{2007--2011}{Undergraduate Study}{Dalian University of Technology}{Dalian} {}{
+2007-2008 Second Class Scholarship \newline{} 2009-2010 Second Class Scholarship} %arguments 3 to 6 are optional
+
+\section{Experience}
+\subsection{Teaching}
+\cventry{Spring 2012}{Teaching Assistant}{Dalian University of Technology}{}{}{Software Tests}
+\subsection{Internship}
+\cventry{2010.7--2010.9}{Intern in Alibaba Cooperation}{Hangzhou, China}{}{}{Java Web Programming}
+
+\section{Languages}
+\cvlanguage{Simplified Chinese}{Native Language}{}
+\cvlanguage{English}{CET-6}{}
+
+\section{Computer skills}
+\cvline{Language}{\small C/C++, Java}
+\cvline{Script}{\small Python, Bash shell, Sql, \LaTeX{}}
+\cvline{Tools}{\small Emacs, vim, Eclipse, git}
+\cvline{Operating System}{\small Linux(Ubuntu Desktop), Windows}
+%\cvcomputer{Basic}{UML, HTML, C++, Tcl, System C} {}{}
+%\cvcomputer{Intermediate}{C, Matlab, Assembly(Intel x86)}{}{}
+%\cvcomputer{Expert}{VHDL, nML}{}{}
+
+\section{Other Interests}
+\cvline{}{\small I also enjoy reading, music, and sports.}
+
+
+\closesection{}
+\end{document}
