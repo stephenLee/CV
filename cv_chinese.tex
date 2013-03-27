@@ -19,13 +19,13 @@
 \firstname{李}
 \familyname{晓东}
 %\title{Resumé title (optional)}               % optional, remove the line if not wanted
-\address{大连理工大学软件学院}{大连经济技术开发区, 116620}    % optional, remove the line if not wanted
+\address{大连理工大学软件学院}{大连市经济技术开发区, 116620}    % optional, remove the line if not wanted
 %\mobile{+30 698 4385057}                    % optional, remove the line if not wanted
 \phone{+86 15841109629}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{lxd.dlut@gmail.com}                      % optional, remove the line if not wanted
 %\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
-\homepage{http://github.com/stephenLee}                 % optional, remove the line if not wanted
+\homepage{stephenlee.github.com}                 % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 %\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
@@ -45,15 +45,35 @@
 
 \section{教育背景}
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-\cventry{2011-- 现在}{硕士在读}{大连理工大学}{大连} {}{}
-\cventry{2007--2011}{本科}{大连理工大学}{大连} {}{
-2007-2008 学习类二等奖学金 \newline{} 2009-2010 学习类二等奖学金} %arguments 3 to 6 are optional
+\cventry{2011-- 至今}{硕士}{大连理工大学软件学院}{将于 2014 毕业} 
+{研究方向： 异构网络挖掘}{感兴趣方向：机器学习，社交网络，数据科学}
+
+\cventry{2007--2011}{本科}{大连理工大学软件学院}{} {}{} %arguments 3 to 6 are optional
 
 \section{个人经历}
-\subsection{教学}
-\cventry{2012 春}{助教}{大连理工大学}{软件测试} {}{}
+
+\subsection{获奖情况}
+\cventry{2011--}{研究生入学一等奖}{}{}{}{}
+\cventry{2009--2010}{学习类二等奖学金}{top 15}{}{}{}
+\cventry{2007--2008}{学习类二等奖学金}{top 15}{}{}{}
+
 \subsection{实习}
-\cventry{2010.7--2010.9}{阿里巴巴有限公司}{中国杭州}{}{}{Java Web Programming}
+\cventry{2010.7--2010.9}
+{阿里巴巴有限公司}{中国杭州}
+{设计并实现了一个监控通知系统,包括页面抓取,关键字匹配,邮件/旺旺提醒,账户管理等模块}{Java实现}{}
+
+\section{项目经历}
+\renewcommand{\baselinestretch}{1.2}
+\vspace*{0.2\baselineskip}
+\cventry{2011--至今}{topic\_model}{分析新浪微博微博主的博文主题}{Python,gensim}{课程项目}{代码：\url{https://github.com/stephenLee/topic_model}}
+\vspace*{0.2\baselineskip}
+\cventry{2012--至今}{sobot}{基于新浪微博和人人网的机器人, 实现了定时从Reddit上抓取热门的机器学习话题然后发送到微博和人人上.微博主页：\url{http://weibo.com/reddit4ml}}{Python，Google App Engine}{个人项目}{代码： \url{https://github.com/datahacking/sobot}}
+\vspace*{0.2\baselineskip}
+\cventry{2012--至今}{visu}{可视化个人的人人网好友}{python，d3.js}{个人项目}{代码：\url{https://github.com/stephenLee/RenrenRecipies}}
+\section{发表论文}
+\cventry{2013}
+{\textnormal{PiaoYong},XiaodongLi}{Link Prediction in Heterogeneous Networks
+Based on Tensor Factorization}{In WAIM 2013}{}{}
 
 \section{语言技能}
 \cvlanguage{中文简体}{母语}{}
@@ -63,13 +83,13 @@
 \cvline{编程语言}{\small C/C++, Java}
 \cvline{脚本}{\small Python, Bash shell, Sql, \LaTeX{}}
 \cvline{工具}{\small Emacs, vim, Eclipse, git}
-\cvline{操作系统}{\small Linux(Ubuntu Desktop), Windows}
+\cvline{操作系统}{\small Linux(Ubuntu Desktop)}
 %\cvcomputer{Basic}{UML, HTML, C++, Tcl, System C} {}{}
 %\cvcomputer{Intermediate}{C, Matlab, Assembly(Intel x86)}{}{}
 %\cvcomputer{Expert}{VHDL, nML}{}{}
 
 \section{其他兴趣}
-\cvline{}{\small 我也喜欢读书，听音乐和运动.}
+\cvline{}{\small 我也热爱开源文化，闲暇时喜欢读电子文档，听音乐, 游戏和运动.}
 
 
 \closesection{}
