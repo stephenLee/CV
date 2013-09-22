@@ -22,9 +22,9 @@
 %\mobile{+30 698 4385057}                    % optional, remove the line if not wanted
 \phone{+86 13426475724}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
-\email{\href{mailto:lxd.dlut@gmail.com}{lxd.dlut@gmail.com}}                      % optional, remove the line if not wanted
+\email{lxd.dlut@gmail.com}
 %\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
-\homepage{http://stephenlee.github.io}                 % optional, remove the line if not wanted
+\homepage {stephenlee.github.io}                 % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 %\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
@@ -48,23 +48,34 @@
 
 \section{Experience}
 \subsection{Award}
-\cventry{2011--}{first Class Scholarship}
+\cventry{2011--}{First Class Scholarship}{}{}{}{}
 \cventry{2009--2010}{Second Class Scholarship}{top 15\%}{}{}{}
 \cventry{2007--2008}{Second Class Scholarship}{top 15\%}{}{}{}
-
 \subsection{Internship}
-\cventry{2013.6.18--now}{Data analysis}{RenRen Game}{Beijing, China}
-\cvitem{Anti spam analysis for mobile ad platform.}
-\cvitem{Weibo analysis.} {Crawl data from Sina weibo, tweets analysis, visualize friendship, social influence analysis.}
-\cvitem{News analysis.} {News crawl, news summary}
-\cventry{2010.7--2010.9}{Java Engineer}{Intern in Alibaba Cooperation}{Hangzhou, China}{Design and implement a monitor and notification system. It includes pages crawl, keywords match, mail and aliwangwang notification, user management modules}{}
+\cventry{2013.6.18--now}{Data analysis}{RenRen Game}{Beijing, China}{}{}
+
+%\renewcommand{\listitemsymbol}{-} 
+\cvlistitem{Anti spam analysis for mobile ad platform}
+\cvlistitem{Weibo analysis. crawl data from Sina weibo,tweets analysis,visualize friendship,social influence analysis.}
+\cvlistitem{News analysis. News crawl,news summary}
+
+\cventry{2010.7--2010.9}{Java Engineer}{Intern in Alibaba Cooperation}{Hangzhou, China}{Design and implement a monitor and notification system. It includes pages crawl, keywords match, mail notification and user management modules}{}
+
+\section{Project Experience}
+\renewcommand{\baselinestretch}{1.2}
+\vspace*{0.2\baselineskip}
+\cventry{2011--2012}{topic\_model}{Analysis Sina weibo's tweets topic}{Python, gensim}{Course Project}{code: \url{https://github.com/stephenLee/topic_model}}
+\vspace*{0.2\baselineskip}
+\cventry{2012--now}{sobot}{Social robot based on Sina weibo and Renren. This robot timely crawls hot topics about machine learning from Reddit and push those messages to Sina weibo and Renren. It solves the problem of information overload. Robot homepage: \url{http://weibo.com/reddit4ml}}{Python, Google App Engine}{Personal Project}{code: \url{https://github.com/datahacking/sobot}}
+\vspace*{0.2\baselineskip}
+\cventry{2012--now}{visu}{Visualize one's Renren friendship}{python, d3.js}{Personal Project}{code: \url{https://github.com/stephenLee/RenrenRecipies}}
+
 
 \section{Research}
 \cventry{2013}
 {Link Prediction in Heterogeneous Networks Based on Tensor Factorization}
 {We propose a new general and effective method based on tensor factorization to address link prediction problem.
-Experiments on the real world network show that by considering multiple relations, 
-the link prediction accuracy can be significantly improved.}{Journal of Engineering Science and Technology Review}{\emph{EI}}{}
+Experiments on the real world network show that by considering multiple relations, the link prediction accuracy can be significantly improved}{Journal of Engineering Science and Technology Review}{\emph{EI}}{}
 
 \section{Languages}
 \cvlanguage{Simplified Chinese}{Native Language}{}
