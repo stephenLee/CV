@@ -11,6 +11,7 @@
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
 \recomputelengths
+\newcommand\myitem{\item[\textbullet]\hspace*{.5em} }
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -49,7 +50,7 @@
 \section{教育背景}
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 \cventry{2011-- 至今}{硕士}{大连理工大学软件学院}{将于 2014 毕业} 
-{研究方向： 异构网络挖掘}{感兴趣方向：机器学习，社交网络，数据分析}
+{研究方向： 异构网络挖掘}{感兴趣方向：数据分析，机器学习，推荐系统，社交网络分析}
 
 \cventry{2007--2011}{本科}{大连理工大学软件学院}{} {}{} %arguments 3 to 6 are optional
 
@@ -62,18 +63,31 @@
 
 \subsection{实习}
 \cventry{2013.6.18--2013.11.07}
-{数据分析}{人人游戏}{中国北京}
-{移动广告平台的反作弊分析,微博数据抓取，微博主题分析、好友可视化、影响力分析, 新闻内容抓取, 新闻内容summary}{Hadoop, Python，ElasticSearch}{}
-
+{数据分析}{人人游戏}{中国北京}{}{}{%
+  \begin{itemize}\setlength\itemindent{2pt}
+    \myitem 移动广告平台的反作弊分析: 负责反作弊列表报告的自动生成
+    \myitem 微博分析: 负责微博外链的抓取,分析.微博内容抓取,主题分析，
+    微博主的影响力分析
+    \myitem 个性化阅读: 负责新闻内容的抓取,内容清洗,新闻内容自动摘要生
+    成,内容配图,内容入库.
+    基于内容的推荐，负责新闻内容和用户兴趣的向量化。
+  \end{itemize}
+}
+\vspace{8 mm}
 \cventry{2010.6--2010.9}
 {Java工程师}{阿里巴巴有限公司}{中国杭州}
 {设计并实现了一个监控通知系统,包括页面抓取,关键字匹配,邮件/旺旺提醒,账户管理等模块}{Java实现}{}
 
 \subsection{竞赛}
+\cventry{2013.10.1---2013.11.15}{中国第一届大数据技术创新大赛}{移动用
+  户交往圈构建和特定类型用户识别}{排名}{6/23}{}
 \cventry{2013.9.1--2013.10.31}
-{Kaggle}{StumbleUpon Evergreen Classification Challenge}{top 25\%}{http://www.kaggle.com/users/26002/stephen-lee}{}{}
+{Kaggle}{StumbleUpon Evergreen Classification Challenge}{排名}{top 25\%}{http://www.kaggle.com/users/26002/stephen-lee}{}
 \section{项目经历}
 \renewcommand{\baselinestretch}{1.2}
+\vspace*{0.2\baselineskip}
+\cventry{2013.11}{summarize36kr}{对36kr的文章智能生成摘要}{个人项
+  目}{代码: \url{https://github.com/stephenLee/summarize36ke}}{}
 \vspace*{0.2\baselineskip}
 \cventry{2011--2012}{topic\_model}{分析新浪微博微博主的博文主题}{Python,gensim}{课程项目}{代码：\url{https://github.com/stephenLee/topic_model}}
 \vspace*{0.2\baselineskip}
